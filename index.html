@@ -9,10 +9,29 @@
 
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body>
 
+    <nav class="py-10 bg-yellow-500">
+        <div class="lg:mx-10 md:mx-5 grid grid-cols-12 items-center text-3xl font-bold" x-data="{'visible': true}">
+            <img src="assets/logo.png" alt="Logo containerctrl" class="col-span-2 lg:col-span-1">
+            <h1 class="col-span-8 lg:col-span-6">containerctrl</h1>
+
+            <p class="col-span-2 lg:hidden" @click="visible = !visible">
+                <i class="fa-solid fa-bars"></i>
+            </p>
+
+            <ul x-show="visible" class="col-span-12 lg:col-span-5 text-black justify-between block lg:flex text-center mt-10 lg:m-0">
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#waarom">Waarom</a></li>
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#meerInfo">Meer info</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
 </body>
 </html>
