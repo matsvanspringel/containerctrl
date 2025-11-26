@@ -13,8 +13,8 @@
 </head>
 <body>
 
-    <nav class="py-10 bg-yellow-500">
-        <div class="lg:mx-10 md:mx-5 grid grid-cols-12 items-center text-3xl font-bold" x-data="{'visible': true}">
+    <nav class="py-10 bg-yellow-500 fixed">
+        <div class="lg:mx-10 md:mx-5 grid grid-cols-12 items-center text-3xl font-bold" x-data="{'visible': false}">
             <img src="assets/logo.png" alt="Logo containerctrl" class="col-span-2 lg:col-span-1">
             <h1 class="col-span-8 lg:col-span-6">containerctrl</h1>
 
@@ -22,13 +22,163 @@
                 <i class="fa-solid fa-bars"></i>
             </p>
 
-            <ul x-show="visible" class="col-span-12 lg:col-span-5 text-black justify-between block lg:flex text-center mt-10 lg:m-0">
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
+            <ul x-show="visible" class="col-span-12 text-black justify-between block text-center mt-10">
                 <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#waarom">Waarom</a></li>
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#meerInfo">Meer info</a></li>
+            </ul>
+
+            <ul class="hidden col-span-5 text-black justify-between lg:flex text-center">
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#waarom">Waarom</a></li>
+                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
                 <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#meerInfo">Meer info</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="bg-red-500">
+        <div class="lg:mx-10 md:mx-5 h-screen flex flex-col justify-center">
+            <h2 class="text-5xl font-bold mb-10">containerctrl</h2>
+            <p class="text-xl mb-10">
+                containerctrl is de oplossing die het volledige opvolgproces van containers voor KMO’s automatiseert en vereenvoudigt. Het biedt zowel logistieke medewerkers als chauffeurs een duidelijke en 
+                efficiënte manier om containerverplaatsingen in real-time te beheren.
+            </p>
+            <p>
+                <a href="#waarom" class="text-lg font-bold p-2 bg-red-800 rounded-md hover:bg-red-900 transition">Meer weten?</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-yellow-700" id="waarom">
+        <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
+            <h2 class="text-3xl font-bold mb-10">
+                Waarom containerctrl?
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="bg-white py-10 m-5 rounded-md">
+                    <p class="text-center mb-5">
+                        <i class="fas fa-shield-alt fa-2xl"></i>
+                    </p>
+                    <h5 class="text-center mb-5 text-xl font-bold">Minder menselijke fouten</h5>
+                    <p class="text-center">
+                        Automatische opvolging en realtime updates verminderen fouten in communicatie en administratie.
+                    </p>
+                </div>
+
+                <div class="bg-white py-10 m-5 rounded-md">
+                    <p class="text-center mb-5">
+                        <i class="fas fa-tachometer-alt fa-2xl"></i>
+                    </p>
+                    <h5 class="text-center mb-5 text-xl font-bold">Efficiëntere workflow</h5>
+                    <p class="text-center">
+                        Logistieke medewerkers en chauffeurs werken sneller en nauwkeuriger dankzij een gestroomlijnde interface.
+                    </p>
+                </div>
+
+                <div class="bg-white py-10 m-5 rounded-md">
+                    <p class="text-center mb-5">
+                        <i class="fas fa-eye fa-2xl"></i>
+                    </p>
+                    <h5 class="text-center mb-5 text-xl font-bold">Volledig overzicht</h5>
+                    <p class="text-center">
+                        Bedrijven krijgen op elk moment inzicht in containerlocaties, status en planning.
+                    </p>
+                </div>
+
+                <div class="bg-white py-10 m-5 rounded-md">
+                    <p class="text-center mb-5">
+                        <i class="fas fa-user-check fa-2xl"></i>
+                    </p>
+                    <h5 class="text-center mb-5 text-xl font-bold">Gebruiksvriendelijkheid</h5>
+                    <p class="text-center">
+                        Eenvoudige navigatie en duidelijke schermen zorgen voor minimale training en maximale adoptie.
+                    </p>
+                </div>
+
+                <div class="bg-white py-10 m-5 rounded-md">
+                    <p class="text-center mb-5">
+                        <i class="fas fa-expand-arrows-alt fa-2xl"></i>
+                    </p>
+                    <h5 class="text-center mb-5 text-xl font-bold">Schaalbaar en flexibel</h5>
+                    <p class="text-center">
+                        De app past zich aan de noden van elke KMO aan, met configureerbare containertypes, inhouden en planningen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-green-800">
+        <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
+            <h2 class="text-3xl font-bold mb-10">
+                Iets weten over ons?
+            </h2>
+
+            <p class="text-lg mb-5">
+                Bij ContainerCTRL streven we ernaar om het containerbeheer voor KMO’s eenvoudiger, slimmer en efficiënter te maken. We zagen hoe tijdrovend en foutgevoelig het opvolgen van containers kan zijn, 
+                en ontwikkelden daarom een oplossing die transparantie, automatisatie en gebruiksgemak centraal zet.
+            </p>
+            <p class="text-lg mb-5">
+                Ons team combineert praktijkervaring uit de logistieke sector met moderne technologie om bedrijven te helpen hun processen te optimaliseren. Met ContainerCTRL willen we niet alleen tijd en kosten besparen, 
+                maar ook zorgen voor een vlottere samenwerking tussen logistieke medewerkers en chauffeurs.
+            </p>
+            <p class="text-lg mb-10">
+                Samen bouwen we aan de toekomst van efficiënt containerbeheer.
+            </p>
+
+            <h4 class="text-center text-3xl font-bold">Ons team</h4>
+
+            <div class="grid grid-cols-1 grid-cols-4">
+                <div class="bg-white rounded-full p-5 m-5">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+
+                    <h5 class="text-center pt-5 font-bold">Mats Vanspringel</h5>
+                    <p class="text-center pb-5"><a href="https://www.linkedin.com/in/mats-vanspringel/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
+                </div>
+
+                <div class="bg-white rounded-full p-5 m-5">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+
+                    <h5 class="text-center pt-5 font-bold">Pieter Jan Uytterhoeven</h5>
+                    <p class="text-center pb-5"><a href="https://www.linkedin.com/in/pieter-jan-uytterhoeven/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
+                </div>
+
+                <div class="bg-white rounded-full p-5 m-5">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+
+                    <h5 class="text-center pt-5 font-bold">Tijl Put</h5>
+                    <p class="text-center pb-5"><a href="https://www.linkedin.com/in/tijl-put-0205aa330/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
+                </div>
+
+                <div class="bg-white rounded-full p-5 m-5">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+
+                    <h5 class="text-center pt-5 font-bold">Jonathan Yang</h5>
+                    <p class="text-center pb-5"><a href="https://www.linkedin.com/in/jonathan-zirui-yang/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-900">
+        <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
+            <h2 class="text-3xl font-bold mb-10">
+                Meer info weten?
+            </h2>
+
+            <p class="text-lg">
+                Benieuwd hoe jij kan bijdragen aan de toekomst van ContainerCTRL? We hebben een korte <a href="#windowsFormsLink">vragenlijst</a> beschikbaar om beter te begrijpen wat bedrijven écht nodig hebben. 
+                Laat hieronder je e-mailadres achter en blijf op de hoogte van onze vooruitgang, nieuwe inzichten en toekomstige releases.
+            </p>
+        </div>
+    </div>
+
+    <footer class="bg-black">
+        <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10 text-white">
+            &copy; 2025 containerctrl
+        </div>
+    </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
