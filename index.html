@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
-<body>
+<body class="text-[#34444F]">
 
-    <nav class="py-10 bg-yellow-500 fixed">
+    <nav class="py-5 bg-[#0A3D62] text-white fixed">
         <div class="lg:mx-10 md:mx-5 grid grid-cols-12 items-center text-3xl font-bold" x-data="{'visible': false}">
             <img src="assets/logo.png" alt="Logo containerctrl" class="col-span-2 lg:col-span-1">
             <h1 class="col-span-8 lg:col-span-6">containerctrl</h1>
@@ -23,35 +23,35 @@
             </p>
 
             <ul x-show="visible" class="col-span-12 text-black justify-between block text-center mt-10">
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#waarom">Waarom</a></li>
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#meerInfo">Meer info</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#waarom">Waarom</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#overOns">Over ons</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#meerInfo">Meer info</a></li>
             </ul>
 
             <ul class="hidden col-span-5 text-black justify-between lg:flex text-center">
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#waarom">Waarom</a></li>
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#overOns">Over ons</a></li>
-                <li><a class="uppercase text-xl hover:text-yellow-800 transition" href="#meerInfo">Meer info</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#waarom">Waarom</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#overOns">Over ons</a></li>
+                <li><a class="text-[#E1E8F0] uppercase text-xl hover:text-[#FF9F1C] transition" href="#meerInfo">Meer info</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="bg-red-500">
+    <div class="bg-[#F5F7FA]">
         <div class="lg:mx-10 md:mx-5 h-screen flex flex-col justify-center">
-            <h2 class="text-5xl font-bold mb-10">containerctrl</h2>
+            <h2 class="text-5xl font-bold mb-10 text-[#1E2A32]">containerctrl</h2>
             <p class="text-xl mb-10">
                 containerctrl is de oplossing die het volledige opvolgproces van containers voor KMO’s automatiseert en vereenvoudigt. Het biedt zowel logistieke medewerkers als chauffeurs een duidelijke en 
                 efficiënte manier om containerverplaatsingen in real-time te beheren.
             </p>
             <p>
-                <a href="#waarom" class="text-lg font-bold p-2 bg-red-800 rounded-md hover:bg-red-900 transition">Meer weten?</a>
+                <a href="#waarom" class="text-lg font-bold p-2 rounded-md bg-[#FF9F1C] hover:bg-[#FFB84D] transition">Meer weten?</a>
             </p>
         </div>
     </div>
 
-    <div class="bg-yellow-700" id="waarom">
+    <div class="bg-[#F5F7FA]" id="waarom">
         <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
-            <h2 class="text-3xl font-bold mb-10">
+            <h2 class="text-3xl font-bold mb-10 text-[#1E2A32]">
                 Waarom containerctrl?
             </h2>
 
@@ -109,9 +109,9 @@
         </div>
     </div>
 
-    <div class="bg-green-800">
+    <div class="bg-[#F5F7FA]" id="overOns">
         <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
-            <h2 class="text-3xl font-bold mb-10">
+            <h2 class="text-3xl font-bold mb-10 text-[#1E2A32]">
                 Iets weten over ons?
             </h2>
 
@@ -130,29 +130,29 @@
             <h4 class="text-center text-3xl font-bold">Ons team</h4>
 
             <div class="grid grid-cols-1 grid-cols-4">
-                <div class="bg-white rounded-full p-5 m-5">
-                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+                <div class="bg-white rounded-full p-5 m-5 border-[#D3D9DE] border-2">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-2" alt="">
 
                     <h5 class="text-center pt-5 font-bold">Mats Vanspringel</h5>
                     <p class="text-center pb-5"><a href="https://www.linkedin.com/in/mats-vanspringel/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
                 </div>
 
-                <div class="bg-white rounded-full p-5 m-5">
-                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+                <div class="bg-white rounded-full p-5 m-5 border-[#D3D9DE] border-2">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-2" alt="">
 
                     <h5 class="text-center pt-5 font-bold">Pieter Jan Uytterhoeven</h5>
                     <p class="text-center pb-5"><a href="https://www.linkedin.com/in/pieter-jan-uytterhoeven/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
                 </div>
 
-                <div class="bg-white rounded-full p-5 m-5">
-                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+                <div class="bg-white rounded-full p-5 m-5 border-[#D3D9DE] border-2">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-2" alt="">
 
                     <h5 class="text-center pt-5 font-bold">Tijl Put</h5>
                     <p class="text-center pb-5"><a href="https://www.linkedin.com/in/tijl-put-0205aa330/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
                 </div>
 
-                <div class="bg-white rounded-full p-5 m-5">
-                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-5" alt="">
+                <div class="bg-white rounded-full p-5 m-5 border-[#D3D9DE] border-2">
+                    <img src="assets/pfp_placeholder.jpg" class="rounded-full mb-2" alt="">
 
                     <h5 class="text-center pt-5 font-bold">Jonathan Yang</h5>
                     <p class="text-center pb-5"><a href="https://www.linkedin.com/in/jonathan-zirui-yang/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></p>
@@ -161,22 +161,42 @@
         </div>
     </div>
 
-    <div class="bg-blue-900">
+    <div class="bg-[#F5F7FA]" id="meerInfo">
         <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10">
-            <h2 class="text-3xl font-bold mb-10">
+            <h2 class="text-3xl font-bold mb-10 text-[#1E2A32]">
                 Meer info weten?
             </h2>
 
             <p class="text-lg">
-                Benieuwd hoe jij kan bijdragen aan de toekomst van ContainerCTRL? We hebben een korte <a href="#windowsFormsLink">vragenlijst</a> beschikbaar om beter te begrijpen wat bedrijven écht nodig hebben. 
-                Laat hieronder je e-mailadres achter en blijf op de hoogte van onze vooruitgang, nieuwe inzichten en toekomstige releases.
+                Benieuwd hoe jij kan bijdragen aan de toekomst van ContainerCTRL? We hebben een korte 
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=xTzTd7TJZkeVx-1bUV4czi3W-X_qfNxEtwQgy6hr9TVUQjFJQllXU0lNMzU0Vjc4UDA0OVVOTjhMNC4u" target="_blank" class="text-[#FFB84D] hover:text-[#FF9F1C] transition">vragenlijst</a> 
+                beschikbaar om beter te begrijpen wat bedrijven écht nodig hebben. Laat hieronder je e-mailadres achter en blijf op de hoogte van onze vooruitgang, nieuwe inzichten en toekomstige releases.
             </p>
         </div>
     </div>
 
-    <footer class="bg-black">
-        <div class="lg:mx-10 md:mx-5 flex flex-col justify-center py-10 text-white">
-            &copy; 2025 containerctrl
+    <footer class="bg-[#1E2A32] text-white py-10">
+        <div class="lg:mx-10 md:mx-5 grid grid-cols-1 lg:grid-cols-2">
+            <div class="text-start">
+                <h5 class="font-bold text-xl text-[#FF9F1C]">containerctrl</h5>  
+                <p>Slimme containeropvolging voor KMO’s</p>              
+            </div>
+
+            <div class="text-start">
+                <h5 class="font-bold text-xl text-[#FF9F1C] mb-2">Navigatie</h5>  
+
+                <ul class="flex justify-between">
+                    <li><a class="text-[#E1E8F0] text-lg hover:text-[#FF9F1C] transition" href="#waarom">Waarom</a></li>
+                    <li><a class="text-[#E1E8F0] text-lg hover:text-[#FF9F1C] transition" href="#overOns">Over ons</a></li>
+                    <li><a class="text-[#E1E8F0] text-lg hover:text-[#FF9F1C] transition" href="#meerInfo">Meer info</a></li>
+                </ul>
+            </div>
+
+            <hr class="lg:col-span-2 my-5">
+
+            <p class="lg:col-span-2 lg:text-center">
+                 &copy; 2025 containerctrl
+            </p>
         </div>
     </footer>
 
